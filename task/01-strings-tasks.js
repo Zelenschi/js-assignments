@@ -40,8 +40,6 @@ function concatenateStrings(value1, value2) {
 function getStringLength(value) {
    return value.length;
    }
- 
-}
 /**
  * Returns the result of string template and given parameters firstName and lastName.
  * Please do not use concatenation, use template string :
