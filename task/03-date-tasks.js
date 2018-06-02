@@ -23,6 +23,7 @@
  */
 function parseDataFromRfc2822(value) {
     throw new Error('Not implemented');
+  
 }
 
 /**
