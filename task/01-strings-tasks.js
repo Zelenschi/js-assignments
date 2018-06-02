@@ -54,7 +54,7 @@ function getStringLength(value) {
  *   'Chuck','Norris'  => 'Hello, Chuck Norris!'
  */
 function getStringFromTemplate(firstName, lastName) {
-    return 'Hello', firstName +''+ lastName;
+    return `Hello, ${firstName +' '+ lastName}!`;
 }
 
 /**
@@ -68,7 +68,7 @@ function getStringFromTemplate(firstName, lastName) {
  *   'Hello, Chuck Norris!' => 'Chuck Norris'
  */
 function extractNameFromTemplate(value) {
-    return value.substr(7,value.length-1); 
+    return value.substr(7, value.length-8); 
 }
 
 
@@ -83,8 +83,7 @@ function extractNameFromTemplate(value) {
  *   'cat'       => 'c'
  */
 function getFirstChar(value) {
-    value.length(1);
-  //return.substr(l,value.length-)
+  return value.substr(0,1);
 }
 
 /**
@@ -99,7 +98,7 @@ function getFirstChar(value) {
  *   '\tHello, World! ' => 'Hello, World!'
  */
 function removeLeadingAndTrailingWhitespaces(value) {
-    return value.replace(/\s/g);
+    return value.trim();
 }
 
 /**
@@ -130,7 +129,7 @@ function repeatString(value, count) {
  *   'ABABAB','BA' => 'ABAB'
  */
 function removeFirstOccurrences(str, value) {
-    return substr(str.length,value);
+    return str.replace(value,'');
 }
 
 /**
@@ -145,7 +144,7 @@ function removeFirstOccurrences(str, value) {
  *   '<a>' => 'a'
  */
 function unbracketTag(str) {
-    return substr(1,str.length-1);
+    return str.substring(1,str.length-1);
 }
 
 
@@ -174,7 +173,7 @@ function convertToUpperCase(str) {
  *   'info@gmail.com' => ['info@gmail.com']
  */
 function extractEmails(str) {
-    return 
+    return str.split(';');
 }
 
 /**
