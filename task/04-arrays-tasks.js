@@ -55,6 +55,7 @@ function generateOdds(len) {
  *    [] => [] 
  */
 function doubleArray(arr) {
+   
    return arr.concat(arr);
 }
 
@@ -526,8 +527,8 @@ function distinct(arr) {
  *   }
  */
 function group(array, keySelector, valueSelector) {
-   throw new Error('Not implemented');
-}
+    throw new Error('Not implemented');
+} 
 
 
 /**
