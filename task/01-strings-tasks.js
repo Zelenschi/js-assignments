@@ -237,7 +237,21 @@ function encodeToRot13(str) {
  *   isString(new String('test')) => true
  */
 function isString(value) {
-    throw new Error('Not implemented');
+
+   // return typeof value === "string";
+  //  return Object.prototype.toString.call(x) === "[object String]"
+  
+  // return isString = value => typeof value === "string";
+
+  throw new Error('Not implemented');
+      /*  if (typeof value === "string") {
+            return true;
+        } else
+        
+        return false; */
+    
+
+   // if (value.typeof=="string"){return  "false"} else {return "true" }
 }
 
 
@@ -266,7 +280,13 @@ function isString(value) {
  *   'K♠' => 51
  */
 function getCardId(value) {
-    throw new Error('Not implemented');
+    
+  
+  var carte = [ 'A♣','2♣','3♣','4♣','5♣','6♣','7♣','8♣','9♣','10♣','J♣','Q♣','K♣',
+   'A♦','2♦','3♦','4♦','5♦','6♦','7♦','8♦','9♦','10♦','J♦','Q♦','K♦',
+   'A♥','2♥','3♥','4♥','5♥','6♥','7♥','8♥','9♥','10♥','J♥','Q♥','K♥',
+   'A♠','2♠','3♠','4♠','5♠','6♠','7♠','8♠','9♠','10♠','J♠','Q♠','K♠' ];
+   return carte.indexOf(value);
 }
 
 
