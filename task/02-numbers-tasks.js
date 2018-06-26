@@ -231,8 +231,16 @@ function isPrime(n) {
  *   toNumber(new Number(42), 0) => 42
  */
 function toNumber(value, def) {
-    throw new Error('Not implemented');
+
+    return parseFloat(value) || def;
+  //  if ( typeof value ==="string" && parseInt(value)==="number") { {return parseInt(value) }  }
+  //   else {return def};
 }
+ /*  if (typeof value === "string") {
+            return true;
+        } else
+        
+        return false; */
 
 module.exports = {
     getRectangleArea: getRectangleArea,
