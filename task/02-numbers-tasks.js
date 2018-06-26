@@ -184,8 +184,9 @@ function getParallelipidedDiagonal(a,b,c) {
  *   1678, 3  => 2000
  */
 function roundToPowerOfTen(num, pow) {
-    throw new Error('Not implemented');
-    //return 
+  
+   return Math.round(num/Math.pow(10,pow))*Math.pow(10,pow);
+ 
 }
 
 /**
