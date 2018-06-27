@@ -251,9 +251,9 @@ function reverseString(str) {
  *   34143 => 34143
  */
 function reverseInteger(num) {
-    var a="";
+   var a="";
    a=num.toString();
-return num.split("").reverse().join("");
+return a.split("").reverse().join("");
 
 }
 
