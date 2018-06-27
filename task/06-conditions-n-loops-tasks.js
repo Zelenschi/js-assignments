@@ -247,7 +247,7 @@ function reverseString(str) {
  * @example:
  *   12345 => 54321
  *   1111  => 1111
- *   87354 => 45378
+ *   87354 => 453780
  *   34143 => 34143
  */
 function reverseInteger(num) {
@@ -279,6 +279,7 @@ return a.split("").reverse().join("");
  */
 function isCreditCardNumber(ccn) {
     throw new Error('Not implemented');
+   
 }
 
 
@@ -297,7 +298,18 @@ function isCreditCardNumber(ccn) {
  *   165536 (1+6+5+5+3+6 = 26,  2+6 = 8) => 8
  */
 function getDigitalRoot(num) {
+    var s=0;
+    let snum=num.toString();
+    for (let i=1; i<=snum.length;i++){
+    s=parseInt(s+i);}
+    if (s<"9") { return s } else
+    { for (let i=1; i<=s.length;i++) s=parseInt(s+i) }
+    return s;
+
+   
     throw new Error('Not implemented');
+  
+
 }
 
 
