@@ -234,7 +234,7 @@ function getIntervalString(a, b, isStartIncluded, isEndIncluded) {
  * 'noon' => 'noon'
  */
 function reverseString(str) {
-    throw new Error('Not implemented');
+    return str.split("").reverse().join("");
 }
 
 
@@ -251,9 +251,11 @@ function reverseString(str) {
  *   34143 => 34143
  */
 function reverseInteger(num) {
-    throw new Error('Not implemented') }
+    var a="";
+   a=num.toString();
+return num.split("").reverse().join("");
 
-
+}
 
 /**
  * Validates the CCN (credit card number) and return true if CCN is valid
