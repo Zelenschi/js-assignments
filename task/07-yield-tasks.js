@@ -47,14 +47,14 @@ function* get99BottlesOfBeer() {
  *
  */
 function* getFibonacciSequence() {
-   // var n;
-    //const isInfinite = n === undefined;
-    //let current = 0;
-    //let next = 1;
+    var n;
+    const isInfinite = n === undefined;
+    let current = 0;
+    let next = 1;
   
-     // while (isInfinite || n--) {
-     // yield current;
-    //  [current, next] = [next, current + next]; } 
+    while (isInfinite || n--) {
+     yield current;
+     [current, next] = [next, current + next]; } 
     throw new Error('Not implemented'); 
 }
 
