@@ -90,8 +90,17 @@ function* getFibonacciSequence() {
  *
  */
 function* depthTraversalTree(root) {
-    throw new Error('Not implemented');
+  /*  var node;
+   yield node.value
+   for (const child of node.children) {
+       yield *depthTraversalTree(child) 
+       return ([depthTraversalTree(root)])
+   } */
+   throw new Error('Not implemented');
+
+
 }
+
 
 
 /**
@@ -135,6 +144,14 @@ function* breadthTraversalTree(root) {
  */
 function* mergeSortedSequences(source1, source2) {
     throw new Error('Not implemented');
+   /*  var z;
+     var zz=[];
+     var rf=[];
+     z=source1+""+source2;
+     zz=parseInt(z);
+rf=zz.sort(function(a,b) { return a - b; });
+return rf;*/
+  
 }
 
 

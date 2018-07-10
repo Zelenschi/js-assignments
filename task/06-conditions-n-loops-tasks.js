@@ -298,17 +298,18 @@ function isCreditCardNumber(ccn) {
  *   165536 (1+6+5+5+3+6 = 26,  2+6 = 8) => 8
  */
 function getDigitalRoot(num) {
-  /*  var s=0;
+  
+    
+
+   
+    throw new Error('Not implemented');
+   /* var s=0;
     let snum=num.toString();
     for (let i=1; i<=snum.length;i++){
     s=parseInt(s+i);}
     if (s<"9") { return s } else
     { for (let i=1; i<=s.length;i++) s=parseInt(s+i) }
-    return s;
-*/
-   
-    throw new Error('Not implemented');
-  
+    return s;*/
 
 }
 
@@ -436,7 +437,10 @@ function getCommonDirectoryPath(pathes) {
  */
 function getMatrixProduct(m1, m2) {
     throw new Error('Not implemented');
-}
+   
+   
+    }
+
 
 
 /**
